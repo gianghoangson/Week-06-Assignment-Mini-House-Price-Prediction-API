@@ -3,7 +3,7 @@
 ## Task 3 Explanations
 
 - **Open http://127.0.0.1:8000/docs, expand /predict, and test it with area=80, bedrooms=3, location=hanoi. Record the returned JSON.**
-  ![record](file:///E:/record.png)
+  ![record](record.png)
 
 - **Why does calling `/predict` without `location` still work?**
   It works because the `location` parameter is given a default value in the function signature (e.g., `location: str = 'hanoi'`). FastAPI recognizes parameters with default values as optional, so if the client omits it, the server simply uses the default value without throwing an error.
